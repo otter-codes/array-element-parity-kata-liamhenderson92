@@ -21,6 +21,11 @@ class ArrayParitySpec extends WordSpec with MustMatchers {
 
     }
 
+    "when given a list of 1,-1,2,-2,-3,-3" in {
+      ArrayParity.parity(List(1,-1,2,-2,-3,-3)) mustEqual -3
+
+    }
+
   }
 
 }
